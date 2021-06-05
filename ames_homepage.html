@@ -1,0 +1,33 @@
+<h1>AMES SALE PRICE</h1>
+<body style="background-color:powderblue;">
+
+<h2>Please enter your measurements below:</h2>
+<form  method="POST">
+    {# This hidden_tag is a CSRF security feature. #}
+    {{ form.hidden_tag() }}
+    {{ form.lot_front.label }} {{form.lot_front}}
+    <br>
+    {{ form.lot_area.label}} {{form.lot_area}}
+    <br>
+    {{ form.ovr_qual.label }} {{form.ovr_qual}}
+    <br>
+    {{ form.yr_built.label }} {{form.yr_built}}
+    <br>
+    {{ form.yr_remod.label }} {{form.yr_remod}}
+    <br>
+    {{ form.bsmt_fin.label }} {{form.bsmt_fin}}
+    <br>
+    {{ form.t_bsmt_sf.label }} {{form.t_bsmt_sf}}
+    <br>
+    {{form.first_flr_sf.label }}{{form.first_flr_sf}}
+    <br>
+    {{form.gr_liv_area.label }}{{form.gr_liv_area}}
+    <br>
+    {{form.gr_cars.label }}{{form.gr_cars}}
+    <br>
+    {{form.gr_area.label }}{{form.gr_area}}
+    <br>
+    
+
+    {{ form.submit() }}
+</form>
